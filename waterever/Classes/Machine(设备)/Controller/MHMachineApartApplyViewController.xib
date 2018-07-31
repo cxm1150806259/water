@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHMachineApartApplyViewController">
+            <connections>
+                <outlet property="descTextField" destination="erz-ky-Ndn" id="HcI-Ey-MGh"/>
+                <outlet property="topView" destination="kjC-Pb-4BA" id="A8h-fH-5Lv"/>
+                <outlet property="view" destination="pIV-fA-t6O" id="4kT-U4-dUj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pIV-fA-t6O">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjC-Pb-4BA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74b-sk-TZc" customClass="MDButton">
+                            <rect key="frame" x="20" y="39" width="80" height="30"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="净水效果差">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="enabled" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifc-XT-mDG" customClass="MDButton">
+                            <rect key="frame" x="120" y="39" width="80" height="30"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="8AZ-uG-wov"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="woX-cL-9gw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="设备故障">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWe-a2-Y9G" customClass="MDButton">
+                            <rect key="frame" x="220" y="39" width="80" height="30"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="要搬家了">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQx-gR-Rsr" customClass="MDButton">
+                            <rect key="frame" x="20" y="91" width="80" height="30"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="不想用了">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kuq-99-D62" customClass="MDButton">
+                            <rect key="frame" x="120" y="91" width="80" height="30"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="其他">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Kuq-99-D62" firstAttribute="width" secondItem="74b-sk-TZc" secondAttribute="width" id="58y-wd-xsl"/>
+                        <constraint firstItem="Ifc-XT-mDG" firstAttribute="centerY" secondItem="74b-sk-TZc" secondAttribute="centerY" id="BzU-oe-zSJ"/>
+                        <constraint firstItem="Kuq-99-D62" firstAttribute="height" secondItem="74b-sk-TZc" secondAttribute="height" id="CF7-qW-4XK"/>
+                        <constraint firstItem="Ifc-XT-mDG" firstAttribute="height" secondItem="74b-sk-TZc" secondAttribute="height" id="CH8-dI-fzR"/>
+                        <constraint firstItem="Kuq-99-D62" firstAttribute="centerX" secondItem="Ifc-XT-mDG" secondAttribute="centerX" id="CnJ-VW-kF3"/>
+                        <constraint firstItem="HQx-gR-Rsr" firstAttribute="width" secondItem="74b-sk-TZc" secondAttribute="width" id="M2a-1B-R0j"/>
+                        <constraint firstItem="Ifc-XT-mDG" firstAttribute="width" secondItem="74b-sk-TZc" secondAttribute="width" id="MFl-2C-akW"/>
+                        <constraint firstItem="SWe-a2-Y9G" firstAttribute="leading" secondItem="Ifc-XT-mDG" secondAttribute="trailing" constant="20" id="Nfl-b4-X3I"/>
+                        <constraint firstItem="SWe-a2-Y9G" firstAttribute="width" secondItem="74b-sk-TZc" secondAttribute="width" id="PNj-Iw-MMF"/>
+                        <constraint firstItem="Ifc-XT-mDG" firstAttribute="width" secondItem="74b-sk-TZc" secondAttribute="width" id="RKp-oT-0Ga"/>
+                        <constraint firstItem="Kuq-99-D62" firstAttribute="centerY" secondItem="HQx-gR-Rsr" secondAttribute="centerY" id="SfZ-57-Vvf"/>
+                        <constraint firstAttribute="height" constant="160" id="T1f-So-WJX"/>
+                        <constraint firstItem="Ifc-XT-mDG" firstAttribute="height" secondItem="74b-sk-TZc" secondAttribute="height" id="T5p-Cd-Xdx"/>
+                        <constraint firstAttribute="trailing" secondItem="SWe-a2-Y9G" secondAttribute="trailing" constant="20" id="VdJ-dg-bFe"/>
+                        <constraint firstItem="SWe-a2-Y9G" firstAttribute="height" secondItem="74b-sk-TZc" secondAttribute="height" id="YOc-rL-iNH"/>
+                        <constraint firstItem="SWe-a2-Y9G" firstAttribute="centerY" secondItem="74b-sk-TZc" secondAttribute="centerY" id="ZiL-4S-xuH"/>
+                        <constraint firstItem="HQx-gR-Rsr" firstAttribute="height" secondItem="74b-sk-TZc" secondAttribute="height" id="a7L-0u-51d"/>
+                        <constraint firstItem="SWe-a2-Y9G" firstAttribute="height" secondItem="74b-sk-TZc" secondAttribute="height" id="bNl-f8-5gL"/>
+                        <constraint firstItem="SWe-a2-Y9G" firstAttribute="width" secondItem="74b-sk-TZc" secondAttribute="width" id="bve-TY-rZy"/>
+                        <constraint firstItem="74b-sk-TZc" firstAttribute="leading" secondItem="kjC-Pb-4BA" secondAttribute="leading" constant="20" id="dQF-pa-Ppn"/>
+                        <constraint firstItem="Ifc-XT-mDG" firstAttribute="top" secondItem="kjC-Pb-4BA" secondAttribute="top" constant="39" id="gTt-sP-wAt"/>
+                        <constraint firstItem="SWe-a2-Y9G" firstAttribute="leading" secondItem="Ifc-XT-mDG" secondAttribute="trailing" constant="20" id="iK8-Pw-kqO"/>
+                        <constraint firstItem="Ifc-XT-mDG" firstAttribute="leading" secondItem="74b-sk-TZc" secondAttribute="trailing" constant="20" id="jEl-0X-Vkb"/>
+                        <constraint firstItem="Kuq-99-D62" firstAttribute="top" secondItem="Ifc-XT-mDG" secondAttribute="bottom" constant="22" id="mSY-zJ-hzw"/>
+                        <constraint firstItem="Ifc-XT-mDG" firstAttribute="leading" secondItem="74b-sk-TZc" secondAttribute="trailing" constant="20" id="uaG-Ic-sho"/>
+                        <constraint firstItem="HQx-gR-Rsr" firstAttribute="leading" secondItem="74b-sk-TZc" secondAttribute="leading" id="yim-DJ-L1H"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="erz-ky-Ndn" customClass="MDTextField">
+                    <rect key="frame" x="20" y="180" width="280" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="sn6-KI-fLn"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hint" value="其他设备或服务问题请补充"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maxCharacterCount">
+                            <integer key="value" value="100"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEh-M7-LfO" customClass="MDButton">
+                    <rect key="frame" x="85" y="330" width="150" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1bR-aL-ezw"/>
+                        <constraint firstAttribute="width" constant="150" id="YL6-kl-fZ5"/>
+                    </constraints>
+                    <state key="normal" title="提交" backgroundImage="3-25">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="submitBtnClicked" destination="-1" eventType="touchUpInside" id="rC7-w3-pnD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="erz-ky-Ndn" firstAttribute="top" secondItem="kjC-Pb-4BA" secondAttribute="bottom" constant="20" id="3Fa-3T-CEk"/>
+                <constraint firstItem="dEh-M7-LfO" firstAttribute="centerX" secondItem="pIV-fA-t6O" secondAttribute="centerX" id="Ifm-D7-KNU"/>
+                <constraint firstAttribute="trailing" secondItem="kjC-Pb-4BA" secondAttribute="trailing" id="IvT-io-fe2"/>
+                <constraint firstItem="kjC-Pb-4BA" firstAttribute="leading" secondItem="pIV-fA-t6O" secondAttribute="leading" id="Mrd-qM-0in"/>
+                <constraint firstItem="dEh-M7-LfO" firstAttribute="top" secondItem="erz-ky-Ndn" secondAttribute="bottom" constant="30" id="OT2-Ps-Byb"/>
+                <constraint firstItem="kjC-Pb-4BA" firstAttribute="top" secondItem="pIV-fA-t6O" secondAttribute="top" id="shH-Y0-xff"/>
+                <constraint firstAttribute="trailing" secondItem="erz-ky-Ndn" secondAttribute="trailing" constant="20" id="w0T-Kr-kV1"/>
+                <constraint firstItem="erz-ky-Ndn" firstAttribute="leading" secondItem="pIV-fA-t6O" secondAttribute="leading" constant="20" id="xuY-W7-0Du"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="3-25" width="150" height="33"/>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHMyBillViewController">
+            <connections>
+                <outlet property="nullView" destination="rQl-ee-izX" id="gU8-GL-1Am"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="60" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="MYP-u0-qlO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="tRE-eo-cmt"/>
+                        <outlet property="delegate" destination="-1" id="gAb-m3-2il"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQl-ee-izX" userLabel="nullView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APP-52" translatesAutoresizingMaskIntoConstraints="NO" id="8T0-9g-3Gd">
+                            <rect key="frame" x="102" y="80" width="116" height="133"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="116" id="2IW-jA-hlA"/>
+                                <constraint firstAttribute="height" constant="133" id="am7-vC-6f9"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无账单" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xj3-Th-Ipb">
+                            <rect key="frame" x="131.5" y="233" width="57.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Xj3-Th-Ipb" firstAttribute="top" secondItem="8T0-9g-3Gd" secondAttribute="bottom" constant="20" id="6qp-Hr-USb"/>
+                        <constraint firstItem="8T0-9g-3Gd" firstAttribute="top" secondItem="rQl-ee-izX" secondAttribute="top" constant="80" id="7W9-0l-E4v"/>
+                        <constraint firstItem="Xj3-Th-Ipb" firstAttribute="centerX" secondItem="rQl-ee-izX" secondAttribute="centerX" id="X9M-8T-u7W"/>
+                        <constraint firstItem="8T0-9g-3Gd" firstAttribute="centerX" secondItem="rQl-ee-izX" secondAttribute="centerX" id="kbz-Tc-kFf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MYP-u0-qlO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7p2-5p-3k7"/>
+                <constraint firstAttribute="trailing" secondItem="MYP-u0-qlO" secondAttribute="trailing" id="HL7-JW-Wav"/>
+                <constraint firstAttribute="bottom" secondItem="rQl-ee-izX" secondAttribute="bottom" id="Mhh-MK-8NH"/>
+                <constraint firstItem="MYP-u0-qlO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QBW-rY-47A"/>
+                <constraint firstAttribute="trailing" secondItem="rQl-ee-izX" secondAttribute="trailing" id="Vc9-sk-S4i"/>
+                <constraint firstItem="rQl-ee-izX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZQP-P5-Hzn"/>
+                <constraint firstAttribute="bottom" secondItem="MYP-u0-qlO" secondAttribute="bottom" id="rFJ-wD-7AE"/>
+                <constraint firstItem="rQl-ee-izX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wI0-Mr-OzN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-210" y="-193"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="APP-52" width="131" height="133"/>
+    </resources>
+</document>

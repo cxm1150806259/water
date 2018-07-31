@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHMachineApartViewController">
+            <connections>
+                <outlet property="view" destination="xG8-Fy-yAw" id="P0H-wy-Nz9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xG8-Fy-yAw">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apartapply" translatesAutoresizingMaskIntoConstraints="NO" id="80f-Sl-ySt">
+                    <rect key="frame" x="98.5" y="80" width="123" height="133"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="133" id="gB8-NW-OmQ"/>
+                        <constraint firstAttribute="width" constant="123" id="hl4-Qu-G6z"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="真的要拆机吗？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kig-eu-81s">
+                    <rect key="frame" x="0.0" y="253" width="320" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拆机后将不能继续享用水粉的服务" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QZ-p8-13w">
+                    <rect key="frame" x="0.0" y="284" width="320" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdg-3M-TjA" customClass="MDButton">
+                    <rect key="frame" x="85" y="342" width="150" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="26m-6X-fhY"/>
+                        <constraint firstAttribute="width" constant="150" id="63D-mf-KdK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="继续使用" backgroundImage="3-25">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="continueBtnClicked" destination="-1" eventType="touchUpInside" id="6fk-uW-Vki"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUV-M2-PQb" customClass="MDButton">
+                    <rect key="frame" x="85" y="392" width="150" height="40"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="狠心拆机">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="apartBtnClicked" destination="-1" eventType="touchUpInside" id="3ag-op-98P"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1QZ-p8-13w" firstAttribute="top" secondItem="Kig-eu-81s" secondAttribute="bottom" constant="10" id="1WC-P9-Yed"/>
+                <constraint firstItem="80f-Sl-ySt" firstAttribute="top" secondItem="xG8-Fy-yAw" secondAttribute="top" constant="80" id="1ju-f7-7Ok"/>
+                <constraint firstItem="JUV-M2-PQb" firstAttribute="width" secondItem="Tdg-3M-TjA" secondAttribute="width" id="7BF-Oh-mtu"/>
+                <constraint firstItem="Tdg-3M-TjA" firstAttribute="centerX" secondItem="xG8-Fy-yAw" secondAttribute="centerX" id="ALb-oz-hTQ"/>
+                <constraint firstItem="1QZ-p8-13w" firstAttribute="leading" secondItem="xG8-Fy-yAw" secondAttribute="leading" id="Ck0-qW-Hdb"/>
+                <constraint firstItem="Tdg-3M-TjA" firstAttribute="top" secondItem="1QZ-p8-13w" secondAttribute="bottom" constant="40" id="Kbz-uk-Wpd"/>
+                <constraint firstItem="80f-Sl-ySt" firstAttribute="centerX" secondItem="xG8-Fy-yAw" secondAttribute="centerX" id="T83-C5-Pzs"/>
+                <constraint firstItem="Kig-eu-81s" firstAttribute="top" secondItem="80f-Sl-ySt" secondAttribute="bottom" constant="40" id="VMU-aW-bno"/>
+                <constraint firstItem="JUV-M2-PQb" firstAttribute="height" secondItem="Tdg-3M-TjA" secondAttribute="height" id="aTW-Qe-X55"/>
+                <constraint firstItem="Kig-eu-81s" firstAttribute="leading" secondItem="xG8-Fy-yAw" secondAttribute="leading" id="bf0-VA-bOp"/>
+                <constraint firstItem="JUV-M2-PQb" firstAttribute="top" secondItem="Tdg-3M-TjA" secondAttribute="bottom" constant="10" id="dyw-Dc-g2U"/>
+                <constraint firstItem="JUV-M2-PQb" firstAttribute="centerX" secondItem="Tdg-3M-TjA" secondAttribute="centerX" id="eig-Qh-ndu"/>
+                <constraint firstAttribute="trailing" secondItem="1QZ-p8-13w" secondAttribute="trailing" id="nFb-H5-M6a"/>
+                <constraint firstAttribute="trailing" secondItem="Kig-eu-81s" secondAttribute="trailing" id="uYc-dU-qcj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-153" y="18"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="3-25" width="150" height="33"/>
+        <image name="apartapply" width="105" height="123"/>
+    </resources>
+</document>

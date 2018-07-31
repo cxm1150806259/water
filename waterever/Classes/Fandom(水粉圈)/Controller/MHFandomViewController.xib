@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHFandomViewController">
+            <connections>
+                <outlet property="nullView" destination="BCe-Ve-Sjl" id="Evi-Rb-tFB"/>
+                <outlet property="tableView" destination="MvU-ED-D7f" id="GrP-vk-sMR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="300" sectionHeaderHeight="8" sectionFooterHeight="8" translatesAutoresizingMaskIntoConstraints="NO" id="MvU-ED-D7f">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TsT-4j-LMZ"/>
+                        <outlet property="delegate" destination="-1" id="Yka-7l-MPz"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCe-Ve-Sjl" userLabel="nullView">
+                    <rect key="frame" x="100" y="194" width="120" height="180"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APP-52" translatesAutoresizingMaskIntoConstraints="NO" id="fjn-AG-nYF">
+                            <rect key="frame" x="-5" y="0.0" width="130" height="133"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无动态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpv-B3-SYk">
+                            <rect key="frame" x="31.5" y="153" width="57.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fjn-AG-nYF" firstAttribute="centerX" secondItem="BCe-Ve-Sjl" secondAttribute="centerX" id="DRv-Lk-Rxz"/>
+                        <constraint firstItem="Xpv-B3-SYk" firstAttribute="centerX" secondItem="fjn-AG-nYF" secondAttribute="centerX" id="Dz8-qq-Vpm"/>
+                        <constraint firstAttribute="height" constant="180" id="F5j-c3-6Hp"/>
+                        <constraint firstItem="fjn-AG-nYF" firstAttribute="top" secondItem="BCe-Ve-Sjl" secondAttribute="top" id="Nly-MN-G80"/>
+                        <constraint firstItem="Xpv-B3-SYk" firstAttribute="top" secondItem="fjn-AG-nYF" secondAttribute="bottom" constant="20" id="a6I-9o-b4C"/>
+                        <constraint firstAttribute="width" constant="120" id="q41-eR-cQe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MvU-ED-D7f" secondAttribute="trailing" id="5Fz-Md-MFk"/>
+                <constraint firstItem="MvU-ED-D7f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PTN-mJ-waY"/>
+                <constraint firstAttribute="bottom" secondItem="MvU-ED-D7f" secondAttribute="bottom" id="SLd-kO-sZY"/>
+                <constraint firstItem="MvU-ED-D7f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wcl-Zw-wRD"/>
+                <constraint firstItem="BCe-Ve-Sjl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dNL-y2-eTP"/>
+                <constraint firstItem="BCe-Ve-Sjl" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="e4A-bX-ayT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-89" y="37"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="APP-52" width="130" height="133"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>intros</key>
+		<array>
+			<string>申请流程</string>
+			<string>关于履约保证金</string>
+		</array>
+		<key>name</key>
+		<string>申请说明</string>
+		<key>icon</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>intros</key>
+		<array>
+			<string>关于激活</string>
+			<string>关于套餐</string>
+			<string>关于分享</string>
+			<string>关于红包</string>
+			<string>关于提现</string>
+		</array>
+		<key>name</key>
+		<string>使用说明</string>
+		<key>icon</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>intros</key>
+		<array>
+			<string>注意事项</string>
+			<string>装箱清单</string>
+			<string>安装流程</string>
+		</array>
+		<key>name</key>
+		<string>安装说明</string>
+		<key>icon</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>intros</key>
+		<array>
+			<string>关于故障</string>
+			<string>故障报修</string>
+		</array>
+		<key>name</key>
+		<string>故障说明</string>
+		<key>icon</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>intros</key>
+		<array>
+			<string>关于拆机</string>
+		</array>
+		<key>name</key>
+		<string>拆机说明</string>
+		<key>icon</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHChangeTelViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6P-pZ-JAH">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_telphone" translatesAutoresizingMaskIntoConstraints="NO" id="bfb-dE-VB6">
+                            <rect key="frame" x="120" y="92" width="80" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="5lX-Sy-dXl"/>
+                                <constraint firstAttribute="width" constant="80" id="NEq-mN-rty"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您当前的手机号为188****8888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qF-G6-un6">
+                            <rect key="frame" x="66.5" y="200" width="187.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="3qF-G6-un6" firstAttribute="top" secondItem="bfb-dE-VB6" secondAttribute="bottom" constant="8" id="D02-Oh-SL4"/>
+                        <constraint firstItem="3qF-G6-un6" firstAttribute="centerX" secondItem="c6P-pZ-JAH" secondAttribute="centerX" id="QcD-ho-qsw"/>
+                        <constraint firstItem="bfb-dE-VB6" firstAttribute="centerX" secondItem="c6P-pZ-JAH" secondAttribute="centerX" id="mgT-Mf-o3k"/>
+                        <constraint firstItem="bfb-dE-VB6" firstAttribute="centerY" secondItem="c6P-pZ-JAH" secondAttribute="centerY" id="rIv-sG-dRk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2JD-Yd-pEJ">
+                    <rect key="frame" x="0.0" y="284" width="320" height="284"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekn-0J-hxa" customClass="MDButton">
+                            <rect key="frame" x="85" y="122" width="150" height="40"/>
+                            <color key="backgroundColor" red="0.78823529411764703" green="0.31372549019607843" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="KX4-bN-LI5"/>
+                                <constraint firstAttribute="width" constant="150" id="lOz-eU-MJ1"/>
+                            </constraints>
+                            <state key="normal" title="更换手机">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="changeBtnClicked" destination="-1" eventType="touchUpInside" id="UDl-Zl-CMI"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更换手机号后个人信息不变" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAd-JE-0ds">
+                            <rect key="frame" x="105" y="170" width="110.5" height="11"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下次可以用新手机号登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndK-TS-wfs">
+                            <rect key="frame" x="109.5" y="184" width="101.5" height="11"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ndK-TS-wfs" firstAttribute="top" secondItem="EAd-JE-0ds" secondAttribute="bottom" constant="3" id="ACV-E7-Gsj"/>
+                        <constraint firstItem="ekn-0J-hxa" firstAttribute="centerX" secondItem="2JD-Yd-pEJ" secondAttribute="centerX" id="G2y-z5-Wao"/>
+                        <constraint firstItem="EAd-JE-0ds" firstAttribute="centerX" secondItem="2JD-Yd-pEJ" secondAttribute="centerX" id="P5l-tT-phu"/>
+                        <constraint firstItem="ndK-TS-wfs" firstAttribute="centerX" secondItem="2JD-Yd-pEJ" secondAttribute="centerX" id="R9e-mk-PRU"/>
+                        <constraint firstItem="ekn-0J-hxa" firstAttribute="centerY" secondItem="2JD-Yd-pEJ" secondAttribute="centerY" id="ojp-Ak-f9G"/>
+                        <constraint firstItem="EAd-JE-0ds" firstAttribute="top" secondItem="ekn-0J-hxa" secondAttribute="bottom" constant="8" id="vZf-Dh-FTn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="c6P-pZ-JAH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FTy-66-Zvh"/>
+                <constraint firstItem="2JD-Yd-pEJ" firstAttribute="height" secondItem="c6P-pZ-JAH" secondAttribute="height" id="FxM-9I-nje"/>
+                <constraint firstItem="2JD-Yd-pEJ" firstAttribute="width" secondItem="c6P-pZ-JAH" secondAttribute="width" id="Gbd-3A-cgS"/>
+                <constraint firstAttribute="trailing" secondItem="c6P-pZ-JAH" secondAttribute="trailing" id="M7O-EW-4FM"/>
+                <constraint firstItem="2JD-Yd-pEJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WG6-B3-NfU"/>
+                <constraint firstAttribute="bottom" secondItem="2JD-Yd-pEJ" secondAttribute="bottom" id="fFH-Vm-sRH"/>
+                <constraint firstAttribute="trailing" secondItem="2JD-Yd-pEJ" secondAttribute="trailing" id="iNE-H9-zEC"/>
+                <constraint firstItem="2JD-Yd-pEJ" firstAttribute="top" secondItem="c6P-pZ-JAH" secondAttribute="bottom" id="jtV-cv-Mnc"/>
+                <constraint firstItem="c6P-pZ-JAH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="km0-aW-0Ox"/>
+                <constraint firstItem="2JD-Yd-pEJ" firstAttribute="top" secondItem="c6P-pZ-JAH" secondAttribute="bottom" id="uD5-m0-WKX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-176" y="18"/>
+        </view>
+        <view contentMode="scaleToFill" id="JeU-Zh-QlE">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="276" y="-90"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_telphone" width="70" height="100"/>
+    </resources>
+</document>

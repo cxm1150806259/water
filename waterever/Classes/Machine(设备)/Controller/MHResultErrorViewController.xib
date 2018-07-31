@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHResultErrorViewController">
+            <connections>
+                <outlet property="view" destination="CA6-q0-CYd" id="uJH-SO-dw6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CA6-q0-CYd">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APP-52" translatesAutoresizingMaskIntoConstraints="NO" id="aev-yW-Eud">
+                    <rect key="frame" x="102" y="80" width="116" height="133"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="133" id="GYp-cj-mzG"/>
+                        <constraint firstAttribute="width" constant="116" id="IkX-86-DrC"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="激活失败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojG-y9-Nkb">
+                    <rect key="frame" x="0.0" y="253" width="320" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定设备信息有误" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiN-MZ-cRA">
+                    <rect key="frame" x="0.0" y="287" width="320" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SE-4o-vKb" customClass="MDButton">
+                    <rect key="frame" x="85" y="348" width="150" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="PYn-Aa-bB9"/>
+                        <constraint firstAttribute="height" constant="40" id="sXi-Rs-7Do"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="确定" backgroundImage="3-25">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="okBtnClicked" destination="-1" eventType="touchUpInside" id="71u-6v-Wvx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ojG-y9-Nkb" firstAttribute="leading" secondItem="CA6-q0-CYd" secondAttribute="leading" id="7lk-P9-g5H"/>
+                <constraint firstItem="jiN-MZ-cRA" firstAttribute="leading" secondItem="CA6-q0-CYd" secondAttribute="leading" id="CdM-Jd-oQ8"/>
+                <constraint firstAttribute="trailing" secondItem="jiN-MZ-cRA" secondAttribute="trailing" id="LDY-fv-NWL"/>
+                <constraint firstItem="7SE-4o-vKb" firstAttribute="centerX" secondItem="CA6-q0-CYd" secondAttribute="centerX" id="ObK-Il-lvd"/>
+                <constraint firstItem="aev-yW-Eud" firstAttribute="top" secondItem="CA6-q0-CYd" secondAttribute="top" constant="80" id="RH9-ZW-iUa"/>
+                <constraint firstAttribute="trailing" secondItem="ojG-y9-Nkb" secondAttribute="trailing" id="Rie-Pv-ojR"/>
+                <constraint firstItem="aev-yW-Eud" firstAttribute="centerX" secondItem="CA6-q0-CYd" secondAttribute="centerX" id="TM2-Vb-g7G"/>
+                <constraint firstItem="jiN-MZ-cRA" firstAttribute="top" secondItem="ojG-y9-Nkb" secondAttribute="bottom" constant="10" id="fqx-K7-nhw"/>
+                <constraint firstItem="ojG-y9-Nkb" firstAttribute="top" secondItem="aev-yW-Eud" secondAttribute="bottom" constant="40" id="g2C-pG-lpF"/>
+                <constraint firstItem="7SE-4o-vKb" firstAttribute="top" secondItem="jiN-MZ-cRA" secondAttribute="bottom" constant="40" id="mZM-eK-ngt"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="3-25" width="150" height="33"/>
+        <image name="APP-52" width="130" height="133"/>
+    </resources>
+</document>
